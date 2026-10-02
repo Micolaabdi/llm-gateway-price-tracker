@@ -16,7 +16,7 @@ git.
 
 ## Latest snapshot
 
-_Auto-updated 2026-10-02T17:47:39Z — 91 models, 69 matched on OpenRouter._
+_Auto-updated 2026-10-02T17:48:59Z — 91 models, 69 matched on OpenRouter._
 
 **84% average saving vs OpenRouter** across 69 matched models (69 of them cheaper).
 
@@ -31,19 +31,19 @@ _Auto-updated 2026-10-02T17:47:39Z — 91 models, 69 matched on OpenRouter._
 | `ali/kimi-k2.7-code` | $0.0024 | $0.010 | $0.0043 | −100% | 262k |
 | `cx/gpt-6-luna` | $0.0022 | $0.011 | $0.0045 | −98% | 272k |
 | `ali/qwen3.8-omni-flash` | $0.0034 | $0.011 | $0.0052 | −98% | 1000k |
-| `cbcn/deepseek-v4.1-flash` | $0.0056 | $0.022 | $0.0098 | −93% | 1000k |
+| `cbcn/deepseek-v4.1-flash` | $0.0053 | $0.021 | $0.0092 | −92% | 1000k |
 | `cx/gpt-5.6-luna` | $0.0045 | $0.027 | $0.010 | −98% | 272k |
-| `ag/gemini-pro-agent` | $0.0050 | $0.030 | $0.011 | — | 1000k |
 | `cb/gpt-5.6-luna` | $0.0050 | $0.030 | $0.011 | −98% | 1000k |
 | `cb/minimax-m3` | $0.0075 | $0.030 | $0.013 | −98% | 1000k |
 | `cbcn/glm-5.3-flash` | $0.0086 | $0.029 | $0.014 | −94% | 1000k |
+| `ali/glm-5.2` | $0.011 | $0.033 | $0.016 | −99% | 1000k |
 | `ali/qwen3.8-flash` | $0.011 | $0.034 | $0.017 | −93% | 1000k |
 | `cbcn/deepseek-v4-flash` | $0.013 | $0.038 | $0.019 | −46% | 1000k |
-| `ali/glm-5.2` | $0.014 | $0.044 | $0.021 | −98% | 1000k |
+| `ag/gemini-pro-agent` | $0.010 | $0.060 | $0.022 | — | 1000k |
 | `cbcn/minimax-m2.7` | $0.017 | $0.069 | $0.030 | −92% | 1000k |
 | `cbcn/minimax-m3` | $0.017 | $0.069 | $0.030 | −94% | 1000k |
 | `cb/hy4-preview` | $0.021 | $0.063 | $0.031 | −97% | 1000k |
-| `cp/cline-pass/deepseek-v4.1-flash` | $0.019 | $0.075 | $0.033 | −77% | 1000k |
+| `cp/cline-pass/deepseek-v4.1-flash` | $0.019 | $0.075 | $0.033 | −73% | 1000k |
 | `cp/cline-pass/mimo-v2.5` | $0.029 | $0.059 | $0.037 | −79% | 1000k |
 | `cp/cline-pass/mimo-v2.6-flash` | $0.029 | $0.059 | $0.037 | −79% | 1000k |
 | `ali/qwen3.8-max-0902` | $0.025 | $0.075 | $0.037 | −99% | 1000k |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T17:47:39Z",
+  "generated_at": "2026-10-02T17:48:59Z",
   "sources": {
     "atmorouter": "https://atmorouter.dev/api/dashboard/catalog",
     "openrouter": "https://openrouter.ai/api/v1/models"
@@ -17,8 +17,8 @@
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
         "input_per_m": 0.02,
-        "output_per_m": 0.5,
-        "blended_per_m": 0.14
+        "output_per_m": 0.42,
+        "blended_per_m": 0.12
       },
       "vs_openrouter_pct": 100.0
     },
@@ -34,8 +34,8 @@
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
         "input_per_m": 0.02,
-        "output_per_m": 0.5,
-        "blended_per_m": 0.14
+        "output_per_m": 0.42,
+        "blended_per_m": 0.12
       },
       "vs_openrouter_pct": 99.5
     },
@@ -124,18 +124,18 @@
       "id": "cbcn/deepseek-v4.1-flash",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.005625,
-        "output_per_m": 0.0225,
-        "blended_per_m": 0.009844,
+        "input_per_m": 0.00525,
+        "output_per_m": 0.021,
+        "blended_per_m": 0.009188,
         "context_length": 1000000
       },
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
         "input_per_m": 0.02,
-        "output_per_m": 0.5,
-        "blended_per_m": 0.14
+        "output_per_m": 0.42,
+        "blended_per_m": 0.12
       },
-      "vs_openrouter_pct": 93.0
+      "vs_openrouter_pct": 92.3
     },
     {
       "id": "cx/gpt-5.6-luna",
@@ -153,16 +153,6 @@
         "blended_per_m": 0.45
       },
       "vs_openrouter_pct": 97.8
-    },
-    {
-      "id": "ag/gemini-pro-agent",
-      "family": "Antigravity",
-      "atmorouter": {
-        "input_per_m": 0.005,
-        "output_per_m": 0.03,
-        "blended_per_m": 0.01125,
-        "context_length": 1000000
-      }
     },
     {
       "id": "cb/gpt-5.6-luna",
@@ -216,6 +206,23 @@
       "vs_openrouter_pct": 94.4
     },
     {
+      "id": "ali/glm-5.2",
+      "family": "Alibaba Cloud",
+      "atmorouter": {
+        "input_per_m": 0.0105,
+        "output_per_m": 0.033,
+        "blended_per_m": 0.016125,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "z-ai/glm-5.2",
+        "input_per_m": 0.41,
+        "output_per_m": 3.99,
+        "blended_per_m": 1.305
+      },
+      "vs_openrouter_pct": 98.8
+    },
+    {
       "id": "ali/qwen3.8-flash",
       "family": "Alibaba Cloud",
       "atmorouter": {
@@ -250,21 +257,14 @@
       "vs_openrouter_pct": 45.8
     },
     {
-      "id": "ali/glm-5.2",
-      "family": "Alibaba Cloud",
+      "id": "ag/gemini-pro-agent",
+      "family": "Antigravity",
       "atmorouter": {
-        "input_per_m": 0.014,
-        "output_per_m": 0.044,
-        "blended_per_m": 0.0215,
+        "input_per_m": 0.01,
+        "output_per_m": 0.06,
+        "blended_per_m": 0.0225,
         "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.2",
-        "input_per_m": 0.41,
-        "output_per_m": 3.99,
-        "blended_per_m": 1.305
-      },
-      "vs_openrouter_pct": 98.4
+      }
     },
     {
       "id": "cbcn/minimax-m2.7",
@@ -329,10 +329,10 @@
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
         "input_per_m": 0.02,
-        "output_per_m": 0.5,
-        "blended_per_m": 0.14
+        "output_per_m": 0.42,
+        "blended_per_m": 0.12
       },
-      "vs_openrouter_pct": 76.6
+      "vs_openrouter_pct": 72.7
     },
     {
       "id": "cp/cline-pass/mimo-v2.5",
@@ -587,10 +587,10 @@
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
         "input_per_m": 0.02,
-        "output_per_m": 0.5,
-        "blended_per_m": 0.14
+        "output_per_m": 0.42,
+        "blended_per_m": 0.12
       },
-      "vs_openrouter_pct": 50.3
+      "vs_openrouter_pct": 42.0
     },
     {
       "id": "ag/claude-opus-4-6-thinking",
@@ -606,9 +606,9 @@
       "id": "cbcn/glm-5.3",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.0525,
-        "output_per_m": 0.165,
-        "blended_per_m": 0.080625,
+        "input_per_m": 0.049,
+        "output_per_m": 0.154,
+        "blended_per_m": 0.07525,
         "context_length": 1000000
       },
       "openrouter": {
@@ -617,7 +617,7 @@
         "output_per_m": 4.4,
         "blended_per_m": 2.15
       },
-      "vs_openrouter_pct": 96.2
+      "vs_openrouter_pct": 96.5
     },
     {
       "id": "cx/gpt-6-sol",
@@ -895,6 +895,40 @@
       "vs_openrouter_pct": 20.3
     },
     {
+      "id": "cbcn/kimi-k3",
+      "family": "CodeBuddy CN",
+      "atmorouter": {
+        "input_per_m": 0.105,
+        "output_per_m": 0.525,
+        "blended_per_m": 0.21,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k3",
+        "input_per_m": 2.7,
+        "output_per_m": 13.5,
+        "blended_per_m": 5.4
+      },
+      "vs_openrouter_pct": 96.1
+    },
+    {
+      "id": "zai/glm-5.3",
+      "family": "Z.AI",
+      "atmorouter": {
+        "input_per_m": 0.14,
+        "output_per_m": 0.44,
+        "blended_per_m": 0.215,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "z-ai/glm-5.3",
+        "input_per_m": 1.4,
+        "output_per_m": 4.4,
+        "blended_per_m": 2.15
+      },
+      "vs_openrouter_pct": 90.0
+    },
+    {
       "id": "cb/claude-opus-4.6",
       "family": "CodeBuddy",
       "atmorouter": {
@@ -937,23 +971,6 @@
         "blended_per_m": 10.0
       },
       "vs_openrouter_pct": 97.8
-    },
-    {
-      "id": "cbcn/kimi-k3",
-      "family": "CodeBuddy CN",
-      "atmorouter": {
-        "input_per_m": 0.1125,
-        "output_per_m": 0.5625,
-        "blended_per_m": 0.225,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "moonshotai/kimi-k3",
-        "input_per_m": 2.7,
-        "output_per_m": 13.5,
-        "blended_per_m": 5.4
-      },
-      "vs_openrouter_pct": 95.8
     },
     {
       "id": "cx/gpt-5.6-sol",
@@ -1049,23 +1066,6 @@
         "blended_per_m": 1.125
       },
       "vs_openrouter_pct": 69.2
-    },
-    {
-      "id": "zai/glm-5.3",
-      "family": "Z.AI",
-      "atmorouter": {
-        "input_per_m": 0.245,
-        "output_per_m": 0.77,
-        "blended_per_m": 0.37625,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.3",
-        "input_per_m": 1.4,
-        "output_per_m": 4.4,
-        "blended_per_m": 2.15
-      },
-      "vs_openrouter_pct": 82.5
     },
     {
       "id": "cx/gpt-6-astra",
