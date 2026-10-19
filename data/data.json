@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T09:59:51Z",
+  "generated_at": "2026-10-19T08:16:47Z",
   "sources": {
     "atmorouter": "https://atmorouter.dev/api/dashboard/catalog",
     "openrouter": "https://openrouter.ai/api/v1/models"
@@ -16,9 +16,9 @@
       },
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
-        "input_per_m": 0.3,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.525
+        "input_per_m": 0.0448,
+        "output_per_m": 0.08,
+        "blended_per_m": 0.0536
       },
       "vs_openrouter_pct": 100.0
     },
@@ -67,11 +67,28 @@
       },
       "openrouter": {
         "id": "z-ai/glm-5.3-flash",
-        "input_per_m": 0.0232,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.3174
+        "input_per_m": 0.0392,
+        "output_per_m": 0.2,
+        "blended_per_m": 0.0794
       },
-      "vs_openrouter_pct": 99.8
+      "vs_openrouter_pct": 99.3
+    },
+    {
+      "id": "cb/hy3",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.00035,
+        "output_per_m": 0.00145,
+        "blended_per_m": 0.000625,
+        "context_length": 192000
+      },
+      "openrouter": {
+        "id": "tencent/hy3",
+        "input_per_m": 0.132,
+        "output_per_m": 0.528,
+        "blended_per_m": 0.231
+      },
+      "vs_openrouter_pct": 99.7
     },
     {
       "id": "alicn/deepseek-v4.1-flash",
@@ -84,11 +101,11 @@
       },
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
-        "input_per_m": 0.3,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.525
+        "input_per_m": 0.0448,
+        "output_per_m": 0.08,
+        "blended_per_m": 0.0536
       },
-      "vs_openrouter_pct": 99.9
+      "vs_openrouter_pct": 98.8
     },
     {
       "id": "cb/deepseek-v4.1-flash",
@@ -101,11 +118,28 @@
       },
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
-        "input_per_m": 0.3,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.525
+        "input_per_m": 0.0448,
+        "output_per_m": 0.08,
+        "blended_per_m": 0.0536
       },
-      "vs_openrouter_pct": 99.9
+      "vs_openrouter_pct": 98.8
+    },
+    {
+      "id": "alicn/deepseek-v4-flash-0731",
+      "family": "ALICN",
+      "atmorouter": {
+        "input_per_m": 0.00055,
+        "output_per_m": 0.00165,
+        "blended_per_m": 0.000825,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "deepseek/deepseek-v4-flash-0731",
+        "input_per_m": 0.15,
+        "output_per_m": 0.15,
+        "blended_per_m": 0.15
+      },
+      "vs_openrouter_pct": 99.5
     },
     {
       "id": "zai/glm-4.6v",
@@ -123,6 +157,26 @@
         "blended_per_m": 0.45
       },
       "vs_openrouter_pct": 99.8
+    },
+    {
+      "id": "mm/MiniMax-M2",
+      "family": "MM",
+      "atmorouter": {
+        "input_per_m": 0.00075,
+        "output_per_m": 0.003,
+        "blended_per_m": 0.001313,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mm/MiniMax-M2.1",
+      "family": "MM",
+      "atmorouter": {
+        "input_per_m": 0.00075,
+        "output_per_m": 0.003,
+        "blended_per_m": 0.001313,
+        "context_length": 204800
+      }
     },
     {
       "id": "mm/MiniMax-M2.5",
@@ -175,38 +229,92 @@
       },
       "openrouter": {
         "id": "deepseek/deepseek-v4-pro-0813",
-        "input_per_m": 1.32,
-        "output_per_m": 3.96,
-        "blended_per_m": 1.98
+        "input_per_m": 0.66,
+        "output_per_m": 1.98,
+        "blended_per_m": 0.99
       },
-      "vs_openrouter_pct": 99.9
+      "vs_openrouter_pct": 99.8
     },
     {
-      "id": "cx/gpt-6-luna",
-      "family": "Codex",
+      "id": "mm/MiniMax-M2.1-highspeed",
+      "family": "MM",
       "atmorouter": {
-        "input_per_m": 0.00125,
-        "output_per_m": 0.00625,
-        "blended_per_m": 0.0025,
-        "context_length": 272000
+        "input_per_m": 0.0015,
+        "output_per_m": 0.006,
+        "blended_per_m": 0.002625,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mm/MiniMax-M2.5-highspeed",
+      "family": "MM",
+      "atmorouter": {
+        "input_per_m": 0.0015,
+        "output_per_m": 0.006,
+        "blended_per_m": 0.002625,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mm/MiniMax-M2.7-highspeed",
+      "family": "MM",
+      "atmorouter": {
+        "input_per_m": 0.0015,
+        "output_per_m": 0.006,
+        "blended_per_m": 0.002625,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "cb/glm-5.3-flash",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.002625,
+        "output_per_m": 0.00875,
+        "blended_per_m": 0.004156,
+        "context_length": 1000000
       },
       "openrouter": {
-        "id": "openai/gpt-6-luna",
-        "input_per_m": 0.1,
-        "output_per_m": 0.5,
-        "blended_per_m": 0.2
+        "id": "z-ai/glm-5.3-flash",
+        "input_per_m": 0.0392,
+        "output_per_m": 0.2,
+        "blended_per_m": 0.0794
       },
-      "vs_openrouter_pct": 98.8
+      "vs_openrouter_pct": 94.8
     },
     {
-      "id": "ag/gemini-3.6-flash-high",
-      "family": "Antigravity",
+      "id": "alicn/kimi-k2.6",
+      "family": "ALICN",
       "atmorouter": {
-        "input_per_m": 0.001875,
-        "output_per_m": 0.009375,
-        "blended_per_m": 0.00375,
-        "context_length": 1000000
-      }
+        "input_per_m": 0.002375,
+        "output_per_m": 0.01,
+        "blended_per_m": 0.004281,
+        "context_length": 262144
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k2.6",
+        "input_per_m": 0.65,
+        "output_per_m": 3.41,
+        "blended_per_m": 1.34
+      },
+      "vs_openrouter_pct": 99.7
+    },
+    {
+      "id": "alicn/kimi-k2.7-code",
+      "family": "ALICN",
+      "atmorouter": {
+        "input_per_m": 0.002375,
+        "output_per_m": 0.01,
+        "blended_per_m": 0.004281,
+        "context_length": 262144
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k2.7-code",
+        "input_per_m": 0.6712,
+        "output_per_m": 3.35,
+        "blended_per_m": 1.3409
+      },
+      "vs_openrouter_pct": 99.7
     },
     {
       "id": "alicn/glm-5.2",
@@ -219,11 +327,11 @@
       },
       "openrouter": {
         "id": "z-ai/glm-5.2",
-        "input_per_m": 0.06,
-        "output_per_m": 7.0,
-        "blended_per_m": 1.795
+        "input_per_m": 0.62,
+        "output_per_m": 2.42,
+        "blended_per_m": 1.07
       },
-      "vs_openrouter_pct": 99.7
+      "vs_openrouter_pct": 99.5
     },
     {
       "id": "alicn/glm-5.3",
@@ -237,10 +345,10 @@
       "openrouter": {
         "id": "z-ai/glm-5.3",
         "input_per_m": 0.079,
-        "output_per_m": 4.8,
-        "blended_per_m": 1.25925
+        "output_per_m": 1.4,
+        "blended_per_m": 0.40925
       },
-      "vs_openrouter_pct": 99.6
+      "vs_openrouter_pct": 98.7
     },
     {
       "id": "zai/glm-5.3",
@@ -254,44 +362,27 @@
       "openrouter": {
         "id": "z-ai/glm-5.3",
         "input_per_m": 0.079,
-        "output_per_m": 4.8,
-        "blended_per_m": 1.25925
+        "output_per_m": 1.4,
+        "blended_per_m": 0.40925
       },
-      "vs_openrouter_pct": 99.6
+      "vs_openrouter_pct": 98.7
     },
     {
-      "id": "cb/gpt-6-luna",
-      "family": "CodeBuddy",
+      "id": "ali/qwen3.8-omni-flash",
+      "family": "Alibaba Cloud",
       "atmorouter": {
-        "input_per_m": 0.00275,
-        "output_per_m": 0.01375,
-        "blended_per_m": 0.0055,
-        "context_length": 272000
+        "input_per_m": 0.00375,
+        "output_per_m": 0.01175,
+        "blended_per_m": 0.00575,
+        "context_length": 1000000
       },
       "openrouter": {
-        "id": "openai/gpt-6-luna",
-        "input_per_m": 0.1,
-        "output_per_m": 0.5,
-        "blended_per_m": 0.2
+        "id": "qwen/qwen3.8-omni-flash",
+        "input_per_m": 0.15,
+        "output_per_m": 0.47,
+        "blended_per_m": 0.23
       },
-      "vs_openrouter_pct": 97.2
-    },
-    {
-      "id": "cx/gpt-5.6-luna",
-      "family": "Codex",
-      "atmorouter": {
-        "input_per_m": 0.0025,
-        "output_per_m": 0.015,
-        "blended_per_m": 0.005625,
-        "context_length": 272000
-      },
-      "openrouter": {
-        "id": "openai/gpt-5.6-luna",
-        "input_per_m": 0.2,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.45
-      },
-      "vs_openrouter_pct": 98.8
+      "vs_openrouter_pct": 97.5
     },
     {
       "id": "ali/deepseek-v4.1-flash",
@@ -304,11 +395,11 @@
       },
       "openrouter": {
         "id": "deepseek/deepseek-v4.1-flash",
-        "input_per_m": 0.3,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.525
+        "input_per_m": 0.0448,
+        "output_per_m": 0.08,
+        "blended_per_m": 0.0536
       },
-      "vs_openrouter_pct": 98.8
+      "vs_openrouter_pct": 87.8
     },
     {
       "id": "alicn/qwen3.8-max",
@@ -321,16 +412,16 @@
       }
     },
     {
-      "id": "grok/grok-4.6",
-      "family": "GROK",
+      "id": "alicn/qwen3.8-max-0902",
+      "family": "ALICN",
       "atmorouter": {
         "input_per_m": 0.005,
         "output_per_m": 0.015,
         "blended_per_m": 0.0075,
-        "context_length": 500000
+        "context_length": 1000000
       },
       "openrouter": {
-        "id": "x-ai/grok-4.6",
+        "id": "qwen/qwen3.8-max-0902",
         "input_per_m": 2.0,
         "output_per_m": 6.0,
         "blended_per_m": 3.0
@@ -338,24 +429,41 @@
       "vs_openrouter_pct": 99.8
     },
     {
-      "id": "grok/grok-4.7",
-      "family": "GROK",
+      "id": "cx/gpt-6-luna",
+      "family": "Codex",
       "atmorouter": {
-        "input_per_m": 0.005,
-        "output_per_m": 0.015,
-        "blended_per_m": 0.0075,
-        "context_length": 500000
+        "input_per_m": 0.0045,
+        "output_per_m": 0.0225,
+        "blended_per_m": 0.009,
+        "context_length": 272000
       },
       "openrouter": {
-        "id": "x-ai/grok-4.7",
-        "input_per_m": 2.0,
-        "output_per_m": 6.0,
-        "blended_per_m": 3.0
+        "id": "openai/gpt-6-luna",
+        "input_per_m": 0.1,
+        "output_per_m": 0.5,
+        "blended_per_m": 0.2
       },
-      "vs_openrouter_pct": 99.8
+      "vs_openrouter_pct": 95.5
     },
     {
-      "id": "ag/gemini-3.7-flash-high",
+      "id": "cb/minimax-m3",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.00525,
+        "output_per_m": 0.021,
+        "blended_per_m": 0.009188,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "minimax/minimax-m3",
+        "input_per_m": 0.3,
+        "output_per_m": 1.2,
+        "blended_per_m": 0.525
+      },
+      "vs_openrouter_pct": 98.2
+    },
+    {
+      "id": "ag/gemini-3.8-flash-high",
       "family": "Antigravity",
       "atmorouter": {
         "input_per_m": 0.005625,
@@ -365,33 +473,13 @@
       }
     },
     {
-      "id": "mmcn/MiniMax-M2.5",
-      "family": "MMCN",
+      "id": "cx/gpt-5.6-luna",
+      "family": "Codex",
       "atmorouter": {
-        "input_per_m": 0.00675,
-        "output_per_m": 0.027,
-        "blended_per_m": 0.011813,
-        "context_length": 204800
-      }
-    },
-    {
-      "id": "mmcn/MiniMax-M2.7",
-      "family": "MMCN",
-      "atmorouter": {
-        "input_per_m": 0.00675,
-        "output_per_m": 0.027,
-        "blended_per_m": 0.011813,
-        "context_length": 204800
-      }
-    },
-    {
-      "id": "cb/gpt-5.6-luna",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.0055,
-        "output_per_m": 0.033,
-        "blended_per_m": 0.012375,
-        "context_length": 1000000
+        "input_per_m": 0.005,
+        "output_per_m": 0.03,
+        "blended_per_m": 0.01125,
+        "context_length": 272000
       },
       "openrouter": {
         "id": "openai/gpt-5.6-luna",
@@ -399,58 +487,34 @@
         "output_per_m": 1.2,
         "blended_per_m": 0.45
       },
-      "vs_openrouter_pct": 97.2
+      "vs_openrouter_pct": 97.5
     },
     {
       "id": "cbcn/glm-5.3-flash",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.007875,
-        "output_per_m": 0.02625,
-        "blended_per_m": 0.012469,
+        "input_per_m": 0.009375,
+        "output_per_m": 0.03125,
+        "blended_per_m": 0.014844,
         "context_length": 1000000
       },
       "openrouter": {
         "id": "z-ai/glm-5.3-flash",
-        "input_per_m": 0.0232,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.3174
+        "input_per_m": 0.0392,
+        "output_per_m": 0.2,
+        "blended_per_m": 0.0794
       },
-      "vs_openrouter_pct": 96.1
+      "vs_openrouter_pct": 81.3
     },
     {
-      "id": "cbcn/deepseek-v4.1-flash",
-      "family": "CodeBuddy CN",
+      "id": "ag/claude-sonnet-4-6",
+      "family": "Antigravity",
       "atmorouter": {
-        "input_per_m": 0.007875,
-        "output_per_m": 0.0315,
-        "blended_per_m": 0.013781,
+        "input_per_m": 0.0075,
+        "output_per_m": 0.0375,
+        "blended_per_m": 0.015,
         "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "deepseek/deepseek-v4.1-flash",
-        "input_per_m": 0.3,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.525
-      },
-      "vs_openrouter_pct": 97.4
-    },
-    {
-      "id": "cb/minimax-m3",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.00825,
-        "output_per_m": 0.033,
-        "blended_per_m": 0.014438,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "minimax/minimax-m3",
-        "input_per_m": 0.3,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.525
-      },
-      "vs_openrouter_pct": 97.2
+      }
     },
     {
       "id": "alicn/kimi-k3",
@@ -463,11 +527,45 @@
       },
       "openrouter": {
         "id": "moonshotai/kimi-k3",
-        "input_per_m": 0.73,
-        "output_per_m": 10.0,
-        "blended_per_m": 3.0475
+        "input_per_m": 0.239,
+        "output_per_m": 11.936,
+        "blended_per_m": 3.16325
       },
       "vs_openrouter_pct": 99.5
+    },
+    {
+      "id": "cbcn/hy3",
+      "family": "CodeBuddy CN",
+      "atmorouter": {
+        "input_per_m": 0.00875,
+        "output_per_m": 0.03625,
+        "blended_per_m": 0.015625,
+        "context_length": 192000
+      },
+      "openrouter": {
+        "id": "tencent/hy3",
+        "input_per_m": 0.132,
+        "output_per_m": 0.528,
+        "blended_per_m": 0.231
+      },
+      "vs_openrouter_pct": 93.2
+    },
+    {
+      "id": "cbcn/deepseek-v4.1-flash",
+      "family": "CodeBuddy CN",
+      "atmorouter": {
+        "input_per_m": 0.009375,
+        "output_per_m": 0.0375,
+        "blended_per_m": 0.016406,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "deepseek/deepseek-v4.1-flash",
+        "input_per_m": 0.0448,
+        "output_per_m": 0.08,
+        "blended_per_m": 0.0536
+      },
+      "vs_openrouter_pct": 69.4
     },
     {
       "id": "ali/qwen3.8-flash",
@@ -487,75 +585,106 @@
       "vs_openrouter_pct": 92.5
     },
     {
-      "id": "ali/qwen3.8-omni-flash",
-      "family": "Alibaba Cloud",
-      "atmorouter": {
-        "input_per_m": 0.01125,
-        "output_per_m": 0.03525,
-        "blended_per_m": 0.01725,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "qwen/qwen3.8-omni-flash",
-        "input_per_m": 0.15,
-        "output_per_m": 0.47,
-        "blended_per_m": 0.23
-      },
-      "vs_openrouter_pct": 92.5
-    },
-    {
       "id": "cbcn/deepseek-v4-flash",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.01155,
-        "output_per_m": 0.03465,
-        "blended_per_m": 0.017325,
+        "input_per_m": 0.01375,
+        "output_per_m": 0.04125,
+        "blended_per_m": 0.020625,
         "context_length": 1000000
       },
       "openrouter": {
         "id": "deepseek/deepseek-v4-flash",
-        "input_per_m": 0.03,
-        "output_per_m": 1.28,
-        "blended_per_m": 0.3425
+        "input_per_m": 0.091,
+        "output_per_m": 0.182,
+        "blended_per_m": 0.11375
       },
-      "vs_openrouter_pct": 94.9
+      "vs_openrouter_pct": 81.9
     },
     {
-      "id": "ag/gemini-3.8-flash-high",
-      "family": "Antigravity",
+      "id": "cb/kimi-k2.5",
+      "family": "CodeBuddy",
       "atmorouter": {
-        "input_per_m": 0.009375,
-        "output_per_m": 0.046875,
-        "blended_per_m": 0.01875,
-        "context_length": 1000000
-      }
+        "input_per_m": 0.0105,
+        "output_per_m": 0.0525,
+        "blended_per_m": 0.021,
+        "context_length": 164000
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k2.5",
+        "input_per_m": 0.5,
+        "output_per_m": 2.5,
+        "blended_per_m": 1.0
+      },
+      "vs_openrouter_pct": 97.9
     },
     {
-      "id": "mmcn/MiniMax-M3.1-Flash-Preview",
-      "family": "MMCN",
+      "id": "cb/hy4-preview",
+      "family": "CodeBuddy",
       "atmorouter": {
-        "input_per_m": 0.01125,
-        "output_per_m": 0.045,
-        "blended_per_m": 0.019688,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "ali/glm-5.2",
-      "family": "Alibaba Cloud",
-      "atmorouter": {
-        "input_per_m": 0.014,
-        "output_per_m": 0.044,
-        "blended_per_m": 0.0215,
+        "input_per_m": 0.014595,
+        "output_per_m": 0.0437675,
+        "blended_per_m": 0.021888,
         "context_length": 1000000
       },
       "openrouter": {
-        "id": "z-ai/glm-5.2",
-        "input_per_m": 0.06,
-        "output_per_m": 7.0,
-        "blended_per_m": 1.795
+        "id": "tencent/hy4-preview",
+        "input_per_m": 0.834,
+        "output_per_m": 2.501,
+        "blended_per_m": 1.25075
       },
-      "vs_openrouter_pct": 98.8
+      "vs_openrouter_pct": 98.2
+    },
+    {
+      "id": "ali/deepseek-v4-pro-0813",
+      "family": "Alibaba Cloud",
+      "atmorouter": {
+        "input_per_m": 0.01485,
+        "output_per_m": 0.04455,
+        "blended_per_m": 0.022275,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "deepseek/deepseek-v4-pro-0813",
+        "input_per_m": 0.66,
+        "output_per_m": 1.98,
+        "blended_per_m": 0.99
+      },
+      "vs_openrouter_pct": 97.7
+    },
+    {
+      "id": "ali/qwen3.8-27b",
+      "family": "Alibaba Cloud",
+      "atmorouter": {
+        "input_per_m": 0.01,
+        "output_per_m": 0.06,
+        "blended_per_m": 0.0225,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "qwen/qwen3.8-27b",
+        "input_per_m": 0.24,
+        "output_per_m": 2.2,
+        "blended_per_m": 0.73
+      },
+      "vs_openrouter_pct": 96.9
+    },
+    {
+      "id": "mai/muse-spark-1.3-contributor",
+      "family": "MAI",
+      "atmorouter": {
+        "input_per_m": 0.01875,
+        "output_per_m": 0.0375,
+        "blended_per_m": 0.023438,
+        "context_length": 1048576
+      },
+      "openrouter": {
+        "id": "meta/muse-spark-1.3-contributor",
+        "input_per_m": 0.1,
+        "output_per_m": 0.2,
+        "blended_per_m": 0.125
+      },
+      "vs_openrouter_pct": 81.2
     },
     {
       "id": "ali/deepseek-v4-flash-0731",
@@ -568,46 +697,100 @@
       },
       "openrouter": {
         "id": "deepseek/deepseek-v4-flash-0731",
-        "input_per_m": 0.016,
-        "output_per_m": 0.64,
-        "blended_per_m": 0.172
+        "input_per_m": 0.15,
+        "output_per_m": 0.15,
+        "blended_per_m": 0.15
       },
-      "vs_openrouter_pct": 85.6
+      "vs_openrouter_pct": 83.5
     },
     {
-      "id": "mmcn/MiniMax-M3",
-      "family": "MMCN",
+      "id": "ag/claude-opus-4-6-thinking",
+      "family": "Antigravity",
       "atmorouter": {
-        "input_per_m": 0.015,
-        "output_per_m": 0.06,
-        "blended_per_m": 0.02625,
+        "input_per_m": 0.0125,
+        "output_per_m": 0.0625,
+        "blended_per_m": 0.025,
         "context_length": 1000000
       }
+    },
+    {
+      "id": "cb/kimi-k2.6",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.016625,
+        "output_per_m": 0.07,
+        "blended_per_m": 0.029969,
+        "context_length": 262144
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k2.6",
+        "input_per_m": 0.65,
+        "output_per_m": 3.41,
+        "blended_per_m": 1.34
+      },
+      "vs_openrouter_pct": 97.8
+    },
+    {
+      "id": "cb/kimi-k2.7",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.016625,
+        "output_per_m": 0.07,
+        "blended_per_m": 0.029969,
+        "context_length": 262144
+      }
+    },
+    {
+      "id": "cb/kimi-k2.8-preview",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.016625,
+        "output_per_m": 0.07,
+        "blended_per_m": 0.029969,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "mai/muse-spark-1.2-contributor",
+      "family": "MAI",
+      "atmorouter": {
+        "input_per_m": 0.025,
+        "output_per_m": 0.05,
+        "blended_per_m": 0.03125,
+        "context_length": 1048576
+      },
+      "openrouter": {
+        "id": "meta/muse-spark-1.2-contributor",
+        "input_per_m": 0.1,
+        "output_per_m": 0.2,
+        "blended_per_m": 0.125
+      },
+      "vs_openrouter_pct": 75.0
     },
     {
       "id": "cbcn/minimax-m2.7",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.01575,
-        "output_per_m": 0.063,
-        "blended_per_m": 0.027563,
+        "input_per_m": 0.01875,
+        "output_per_m": 0.075,
+        "blended_per_m": 0.032812,
         "context_length": 1000000
       },
       "openrouter": {
         "id": "minimax/minimax-m2.7",
-        "input_per_m": 0.21,
-        "output_per_m": 0.84,
-        "blended_per_m": 0.3675
+        "input_per_m": 0.3,
+        "output_per_m": 1.2,
+        "blended_per_m": 0.525
       },
-      "vs_openrouter_pct": 92.5
+      "vs_openrouter_pct": 93.8
     },
     {
       "id": "cbcn/minimax-m3",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.01575,
-        "output_per_m": 0.063,
-        "blended_per_m": 0.027563,
+        "input_per_m": 0.01875,
+        "output_per_m": 0.075,
+        "blended_per_m": 0.032812,
         "context_length": 1000000
       },
       "openrouter": {
@@ -616,58 +799,7 @@
         "output_per_m": 1.2,
         "blended_per_m": 0.525
       },
-      "vs_openrouter_pct": 94.8
-    },
-    {
-      "id": "cb/hy4-preview",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.02085,
-        "output_per_m": 0.062525,
-        "blended_per_m": 0.031269,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "tencent/hy4-preview",
-        "input_per_m": 0.834,
-        "output_per_m": 2.501,
-        "blended_per_m": 1.25075
-      },
-      "vs_openrouter_pct": 97.5
-    },
-    {
-      "id": "cp/cline-pass/mimo-v2.5",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.02975,
-        "output_per_m": 0.0595,
-        "blended_per_m": 0.037187,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "xiaomi/mimo-v2.5",
-        "input_per_m": 0.14,
-        "output_per_m": 0.28,
-        "blended_per_m": 0.175
-      },
-      "vs_openrouter_pct": 78.8
-    },
-    {
-      "id": "cp/cline-pass/mimo-v2.6-flash",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.02975,
-        "output_per_m": 0.0595,
-        "blended_per_m": 0.037187,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "xiaomi/mimo-v2.6-flash",
-        "input_per_m": 0.14,
-        "output_per_m": 0.28,
-        "blended_per_m": 0.175
-      },
-      "vs_openrouter_pct": 78.8
+      "vs_openrouter_pct": 93.8
     },
     {
       "id": "ali/qwen3.8-max-0902",
@@ -687,6 +819,40 @@
       "vs_openrouter_pct": 98.8
     },
     {
+      "id": "cb/glm-5.2",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.0245,
+        "output_per_m": 0.077,
+        "blended_per_m": 0.037625,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "z-ai/glm-5.2",
+        "input_per_m": 0.62,
+        "output_per_m": 2.42,
+        "blended_per_m": 1.07
+      },
+      "vs_openrouter_pct": 96.5
+    },
+    {
+      "id": "cb/glm-5.3",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.0245,
+        "output_per_m": 0.077,
+        "blended_per_m": 0.037625,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "z-ai/glm-5.3",
+        "input_per_m": 0.079,
+        "output_per_m": 1.4,
+        "blended_per_m": 0.40925
+      },
+      "vs_openrouter_pct": 90.8
+    },
+    {
       "id": "kc/kimi-for-coding",
       "family": "KC",
       "atmorouter": {
@@ -697,97 +863,90 @@
       }
     },
     {
-      "id": "cp/zai/glm-5.3-flash",
-      "family": "Cline Pass",
+      "id": "cc/claude-haiku-5-5",
+      "family": "Claude Code",
       "atmorouter": {
-        "input_per_m": 0.031125,
-        "output_per_m": 0.10375,
-        "blended_per_m": 0.049281,
+        "input_per_m": 0.02375,
+        "output_per_m": 0.11875,
+        "blended_per_m": 0.0475,
         "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.3-flash",
-        "input_per_m": 0.0232,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.3174
-      },
-      "vs_openrouter_pct": 84.5
+      }
     },
     {
-      "id": "ali/deepseek-v4-pro-0813",
+      "id": "ali/glm-5.2",
       "family": "Alibaba Cloud",
       "atmorouter": {
-        "input_per_m": 0.033,
+        "input_per_m": 0.0315,
         "output_per_m": 0.099,
-        "blended_per_m": 0.0495,
+        "blended_per_m": 0.048375,
         "context_length": 1000000
       },
       "openrouter": {
-        "id": "deepseek/deepseek-v4-pro-0813",
-        "input_per_m": 1.32,
-        "output_per_m": 3.96,
-        "blended_per_m": 1.98
+        "id": "z-ai/glm-5.2",
+        "input_per_m": 0.62,
+        "output_per_m": 2.42,
+        "blended_per_m": 1.07
       },
-      "vs_openrouter_pct": 97.5
+      "vs_openrouter_pct": 95.5
     },
     {
-      "id": "cx/gpt-6-sol",
-      "family": "Codex",
+      "id": "ali/glm-5.3",
+      "family": "Alibaba Cloud",
       "atmorouter": {
-        "input_per_m": 0.025,
-        "output_per_m": 0.125,
-        "blended_per_m": 0.05,
-        "context_length": 272000
-      },
-      "openrouter": {
-        "id": "openai/gpt-6-sol",
-        "input_per_m": 2.0,
-        "output_per_m": 10.0,
-        "blended_per_m": 4.0
-      },
-      "vs_openrouter_pct": 98.8
-    },
-    {
-      "id": "cx/gpt-6.1-sol",
-      "family": "Codex",
-      "atmorouter": {
-        "input_per_m": 0.025,
-        "output_per_m": 0.125,
-        "blended_per_m": 0.05,
-        "context_length": 272000
-      },
-      "openrouter": {
-        "id": "openai/gpt-6.1-sol",
-        "input_per_m": 2.0,
-        "output_per_m": 10.0,
-        "blended_per_m": 4.0
-      },
-      "vs_openrouter_pct": 98.8
-    },
-    {
-      "id": "cp/cline-pass/glm-5.3-flash",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.031875,
-        "output_per_m": 0.10625,
-        "blended_per_m": 0.050469,
+        "input_per_m": 0.0315,
+        "output_per_m": 0.099,
+        "blended_per_m": 0.048375,
         "context_length": 1000000
       },
       "openrouter": {
-        "id": "z-ai/glm-5.3-flash",
-        "input_per_m": 0.0232,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.3174
+        "id": "z-ai/glm-5.3",
+        "input_per_m": 0.079,
+        "output_per_m": 1.4,
+        "blended_per_m": 0.40925
       },
-      "vs_openrouter_pct": 84.1
+      "vs_openrouter_pct": 88.2
+    },
+    {
+      "id": "grok/grok-4.5",
+      "family": "GROK",
+      "atmorouter": {
+        "input_per_m": 0.0325,
+        "output_per_m": 0.105,
+        "blended_per_m": 0.050625,
+        "context_length": 500000
+      },
+      "openrouter": {
+        "id": "x-ai/grok-4.5",
+        "input_per_m": 2.0,
+        "output_per_m": 6.0,
+        "blended_per_m": 3.0
+      },
+      "vs_openrouter_pct": 98.3
+    },
+    {
+      "id": "ali/qwen3.8-2.4t-a95b",
+      "family": "Alibaba Cloud",
+      "atmorouter": {
+        "input_per_m": 0.04,
+        "output_per_m": 0.12,
+        "blended_per_m": 0.06,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "input_per_m": 2.0,
+        "output_per_m": 6.0,
+        "blended_per_m": 3.0
+      },
+      "vs_openrouter_pct": 98.0
     },
     {
       "id": "cbcn/deepseek-v4-pro",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.03465,
-        "output_per_m": 0.10395,
-        "blended_per_m": 0.051975,
+        "input_per_m": 0.04125,
+        "output_per_m": 0.12375,
+        "blended_per_m": 0.061875,
         "context_length": 1000000
       },
       "openrouter": {
@@ -796,99 +955,38 @@
         "output_per_m": 1.91052,
         "blended_per_m": 1.194075
       },
-      "vs_openrouter_pct": 95.6
-    },
-    {
-      "id": "cb/glm-5.3",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.035,
-        "output_per_m": 0.11,
-        "blended_per_m": 0.05375,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.3",
-        "input_per_m": 0.079,
-        "output_per_m": 4.8,
-        "blended_per_m": 1.25925
-      },
-      "vs_openrouter_pct": 95.7
-    },
-    {
-      "id": "ag/gemini-pro-agent",
-      "family": "Antigravity",
-      "atmorouter": {
-        "input_per_m": 0.025,
-        "output_per_m": 0.15,
-        "blended_per_m": 0.05625,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "cx/gpt-5.6-terra",
-      "family": "Codex",
-      "atmorouter": {
-        "input_per_m": 0.025,
-        "output_per_m": 0.15,
-        "blended_per_m": 0.05625,
-        "context_length": 272000
-      },
-      "openrouter": {
-        "id": "openai/gpt-5.6-terra",
-        "input_per_m": 2.0,
-        "output_per_m": 12.0,
-        "blended_per_m": 4.5
-      },
-      "vs_openrouter_pct": 98.8
-    },
-    {
-      "id": "cb/glm-5.2",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.0385,
-        "output_per_m": 0.121,
-        "blended_per_m": 0.059125,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.2",
-        "input_per_m": 0.06,
-        "output_per_m": 7.0,
-        "blended_per_m": 1.795
-      },
-      "vs_openrouter_pct": 96.7
+      "vs_openrouter_pct": 94.8
     },
     {
       "id": "ali/qwen3.8-max",
       "family": "Alibaba Cloud",
       "atmorouter": {
-        "input_per_m": 0.04,
-        "output_per_m": 0.12,
-        "blended_per_m": 0.06,
+        "input_per_m": 0.045,
+        "output_per_m": 0.135,
+        "blended_per_m": 0.0675,
         "context_length": 1000000
       }
     },
     {
-      "id": "cbcn/hy4-preview",
+      "id": "cbcn/kimi-k2.5",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.043785,
-        "output_per_m": 0.1313025,
-        "blended_per_m": 0.065664,
-        "context_length": 1000000
+        "input_per_m": 0.0375,
+        "output_per_m": 0.1875,
+        "blended_per_m": 0.075,
+        "context_length": 164000
       },
       "openrouter": {
-        "id": "tencent/hy4-preview",
-        "input_per_m": 0.834,
-        "output_per_m": 2.501,
-        "blended_per_m": 1.25075
+        "id": "moonshotai/kimi-k2.5",
+        "input_per_m": 0.5,
+        "output_per_m": 2.5,
+        "blended_per_m": 1.0
       },
-      "vs_openrouter_pct": 94.8
+      "vs_openrouter_pct": 92.5
     },
     {
-      "id": "cb/grok-4.6",
-      "family": "CodeBuddy",
+      "id": "grok/grok-4.6",
+      "family": "GROK",
       "atmorouter": {
         "input_per_m": 0.05,
         "output_per_m": 0.15,
@@ -904,8 +1002,8 @@
       "vs_openrouter_pct": 97.5
     },
     {
-      "id": "cb/grok-4.7",
-      "family": "CodeBuddy",
+      "id": "grok/grok-4.7",
+      "family": "GROK",
       "atmorouter": {
         "input_per_m": 0.05,
         "output_per_m": 0.15,
@@ -921,6 +1019,77 @@
       "vs_openrouter_pct": 97.5
     },
     {
+      "id": "cbcn/hy4-preview",
+      "family": "CodeBuddy CN",
+      "atmorouter": {
+        "input_per_m": 0.052125,
+        "output_per_m": 0.1563125,
+        "blended_per_m": 0.078172,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "tencent/hy4-preview",
+        "input_per_m": 0.834,
+        "output_per_m": 2.501,
+        "blended_per_m": 1.25075
+      },
+      "vs_openrouter_pct": 93.8
+    },
+    {
+      "id": "cb/gemini-3.1-pro",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.035,
+        "output_per_m": 0.21,
+        "blended_per_m": 0.07875,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "kiro/deepseek-3.2",
+      "family": "KIRO",
+      "atmorouter": {
+        "input_per_m": 0.07,
+        "output_per_m": 0.105,
+        "blended_per_m": 0.07875,
+        "context_length": 164000
+      }
+    },
+    {
+      "id": "cx/gpt-6.1-sol",
+      "family": "Codex",
+      "atmorouter": {
+        "input_per_m": 0.04,
+        "output_per_m": 0.2,
+        "blended_per_m": 0.08,
+        "context_length": 500000
+      },
+      "openrouter": {
+        "id": "openai/gpt-6.1-sol",
+        "input_per_m": 2.0,
+        "output_per_m": 10.0,
+        "blended_per_m": 4.0
+      },
+      "vs_openrouter_pct": 98.0
+    },
+    {
+      "id": "cb/gpt-5.3-codex",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.030625,
+        "output_per_m": 0.245,
+        "blended_per_m": 0.084219,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "openai/gpt-5.3-codex",
+        "input_per_m": 1.75,
+        "output_per_m": 14.0,
+        "blended_per_m": 4.8125
+      },
+      "vs_openrouter_pct": 98.2
+    },
+    {
       "id": "kc/kimi-for-coding-highspeed",
       "family": "KC",
       "atmorouter": {
@@ -931,22 +1100,12 @@
       }
     },
     {
-      "id": "cbcn/kimi-k2.7",
-      "family": "CodeBuddy CN",
+      "id": "cx/gpt-6-sol",
+      "family": "Codex",
       "atmorouter": {
-        "input_per_m": 0.049875,
-        "output_per_m": 0.21,
-        "blended_per_m": 0.089906,
-        "context_length": 262144
-      }
-    },
-    {
-      "id": "cb/gpt-6-sol",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.045,
-        "output_per_m": 0.225,
-        "blended_per_m": 0.09,
+        "input_per_m": 0.05,
+        "output_per_m": 0.25,
+        "blended_per_m": 0.1,
         "context_length": 272000
       },
       "openrouter": {
@@ -955,15 +1114,92 @@
         "output_per_m": 10.0,
         "blended_per_m": 4.0
       },
-      "vs_openrouter_pct": 97.8
+      "vs_openrouter_pct": 97.5
+    },
+    {
+      "id": "mmcn/MiniMax-M2",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.05925,
+        "output_per_m": 0.237,
+        "blended_per_m": 0.103687,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mmcn/MiniMax-M2.1",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.05925,
+        "output_per_m": 0.237,
+        "blended_per_m": 0.103687,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mmcn/MiniMax-M2.5",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.05925,
+        "output_per_m": 0.237,
+        "blended_per_m": 0.103687,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mmcn/MiniMax-M2.7",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.05925,
+        "output_per_m": 0.237,
+        "blended_per_m": 0.103687,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mmcn/MiniMax-M3",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.05925,
+        "output_per_m": 0.237,
+        "blended_per_m": 0.103687,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "mmcn/MiniMax-M3.1-Flash-Preview",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.05925,
+        "output_per_m": 0.237,
+        "blended_per_m": 0.103687,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "cb/kimi-k3",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.0525,
+        "output_per_m": 0.2625,
+        "blended_per_m": 0.105,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k3",
+        "input_per_m": 0.239,
+        "output_per_m": 11.936,
+        "blended_per_m": 3.16325
+      },
+      "vs_openrouter_pct": 96.7
     },
     {
       "id": "cbcn/kimi-k2.6",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.05225,
-        "output_per_m": 0.22,
-        "blended_per_m": 0.094188,
+        "input_per_m": 0.059375,
+        "output_per_m": 0.25,
+        "blended_per_m": 0.107031,
         "context_length": 262144
       },
       "openrouter": {
@@ -972,102 +1208,44 @@
         "output_per_m": 3.41,
         "blended_per_m": 1.34
       },
-      "vs_openrouter_pct": 93.0
+      "vs_openrouter_pct": 92.0
     },
     {
-      "id": "cp/cline-pass/minimax-m3",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.06375,
-        "output_per_m": 0.255,
-        "blended_per_m": 0.111563,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "minimax/minimax-m3",
-        "input_per_m": 0.3,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.525
-      },
-      "vs_openrouter_pct": 78.8
-    },
-    {
-      "id": "cbcn/glm-5.2",
+      "id": "cbcn/kimi-k2.7",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.0735,
-        "output_per_m": 0.231,
-        "blended_per_m": 0.112875,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.2",
-        "input_per_m": 0.06,
-        "output_per_m": 7.0,
-        "blended_per_m": 1.795
-      },
-      "vs_openrouter_pct": 93.7
+        "input_per_m": 0.059375,
+        "output_per_m": 0.25,
+        "blended_per_m": 0.107031,
+        "context_length": 262144
+      }
     },
     {
-      "id": "cbcn/glm-5.3",
+      "id": "cbcn/kimi-k2.8-preview",
       "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.0735,
-        "output_per_m": 0.231,
-        "blended_per_m": 0.112875,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.3",
-        "input_per_m": 0.079,
-        "output_per_m": 4.8,
-        "blended_per_m": 1.25925
-      },
-      "vs_openrouter_pct": 91.0
-    },
-    {
-      "id": "cb/gpt-5.3-codex",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.04375,
-        "output_per_m": 0.35,
-        "blended_per_m": 0.120312,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "openai/gpt-5.3-codex",
-        "input_per_m": 1.75,
-        "output_per_m": 14.0,
-        "blended_per_m": 4.8125
-      },
-      "vs_openrouter_pct": 97.5
-    },
-    {
-      "id": "cb/gemini-3.1-pro",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.055,
-        "output_per_m": 0.33,
-        "blended_per_m": 0.12375,
+        "input_per_m": 0.059375,
+        "output_per_m": 0.25,
+        "blended_per_m": 0.107031,
         "context_length": 1000000
       }
     },
     {
-      "id": "cp/cline-pass/deepseek-v4.1-flash",
-      "family": "Cline Pass",
+      "id": "kiro/gpt-5.6-luna",
+      "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 0.072375,
-        "output_per_m": 0.2895,
-        "blended_per_m": 0.126656,
+        "input_per_m": 0.05,
+        "output_per_m": 0.3,
+        "blended_per_m": 0.1125,
         "context_length": 1000000
       },
       "openrouter": {
-        "id": "deepseek/deepseek-v4.1-flash",
-        "input_per_m": 0.3,
+        "id": "openai/gpt-5.6-luna",
+        "input_per_m": 0.2,
         "output_per_m": 1.2,
-        "blended_per_m": 0.525
+        "blended_per_m": 0.45
       },
-      "vs_openrouter_pct": 75.9
+      "vs_openrouter_pct": 75.0
     },
     {
       "id": "ali/kimi-k2.7-code",
@@ -1087,59 +1265,120 @@
       "vs_openrouter_pct": 90.4
     },
     {
-      "id": "cb/gpt-5.4",
-      "family": "CodeBuddy",
+      "id": "kcai/kimi-for-coding",
+      "family": "KCAI",
       "atmorouter": {
-        "input_per_m": 0.0625,
-        "output_per_m": 0.375,
-        "blended_per_m": 0.140625,
+        "input_per_m": 0.07125,
+        "output_per_m": 0.3,
+        "blended_per_m": 0.128437,
+        "context_length": 1048576
+      }
+    },
+    {
+      "id": "kiro/minimax-m2.1",
+      "family": "KIRO",
+      "atmorouter": {
+        "input_per_m": 0.075,
+        "output_per_m": 0.3,
+        "blended_per_m": 0.13125,
+        "context_length": 196000
+      },
+      "openrouter": {
+        "id": "minimax/minimax-m2.1",
+        "input_per_m": 0.3,
+        "output_per_m": 1.2,
+        "blended_per_m": 0.525
+      },
+      "vs_openrouter_pct": 75.0
+    },
+    {
+      "id": "kiro/minimax-m2.5",
+      "family": "KIRO",
+      "atmorouter": {
+        "input_per_m": 0.075,
+        "output_per_m": 0.3,
+        "blended_per_m": 0.13125,
+        "context_length": 196000
+      },
+      "openrouter": {
+        "id": "minimax/minimax-m2.5",
+        "input_per_m": 0.27,
+        "output_per_m": 0.95,
+        "blended_per_m": 0.44
+      },
+      "vs_openrouter_pct": 70.2
+    },
+    {
+      "id": "cbcn/glm-5.1",
+      "family": "CodeBuddy CN",
+      "atmorouter": {
+        "input_per_m": 0.0875,
+        "output_per_m": 0.275,
+        "blended_per_m": 0.134375,
+        "context_length": 200000
+      },
+      "openrouter": {
+        "id": "z-ai/glm-5.1",
+        "input_per_m": 0.966,
+        "output_per_m": 3.036,
+        "blended_per_m": 1.4835
+      },
+      "vs_openrouter_pct": 90.9
+    },
+    {
+      "id": "cbcn/glm-5.2",
+      "family": "CodeBuddy CN",
+      "atmorouter": {
+        "input_per_m": 0.0875,
+        "output_per_m": 0.275,
+        "blended_per_m": 0.134375,
         "context_length": 1000000
       },
       "openrouter": {
-        "id": "openai/gpt-5.4",
-        "input_per_m": 2.5,
-        "output_per_m": 15.0,
-        "blended_per_m": 5.625
+        "id": "z-ai/glm-5.2",
+        "input_per_m": 0.62,
+        "output_per_m": 2.42,
+        "blended_per_m": 1.07
       },
-      "vs_openrouter_pct": 97.5
+      "vs_openrouter_pct": 87.4
     },
     {
-      "id": "cx/gpt-5.5",
-      "family": "Codex",
+      "id": "cbcn/glm-5.3",
+      "family": "CodeBuddy CN",
       "atmorouter": {
-        "input_per_m": 0.0625,
-        "output_per_m": 0.375,
-        "blended_per_m": 0.140625,
-        "context_length": 272000
+        "input_per_m": 0.0875,
+        "output_per_m": 0.275,
+        "blended_per_m": 0.134375,
+        "context_length": 1000000
       },
       "openrouter": {
-        "id": "openai/gpt-5.5",
-        "input_per_m": 5.0,
-        "output_per_m": 30.0,
-        "blended_per_m": 11.25
+        "id": "z-ai/glm-5.3",
+        "input_per_m": 0.079,
+        "output_per_m": 1.4,
+        "blended_per_m": 0.40925
       },
-      "vs_openrouter_pct": 98.8
+      "vs_openrouter_pct": 67.2
     },
     {
-      "id": "cx/gpt-5.6-sol",
-      "family": "Codex",
-      "atmorouter": {
-        "input_per_m": 0.0625,
-        "output_per_m": 0.375,
-        "blended_per_m": 0.140625,
-        "context_length": 272000
-      },
-      "openrouter": {
-        "id": "openai/gpt-5.6-sol",
-        "input_per_m": 2.0,
-        "output_per_m": 10.0,
-        "blended_per_m": 4.0
-      },
-      "vs_openrouter_pct": 96.5
-    },
-    {
-      "id": "cb/kimi-k3",
+      "id": "cb/gemini-2.5-flash-image",
       "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.00525,
+        "output_per_m": 0.525,
+        "blended_per_m": 0.135188,
+        "context_length": 0
+      },
+      "openrouter": {
+        "id": "google/gemini-2.5-flash-image",
+        "input_per_m": 0.3,
+        "output_per_m": 2.5,
+        "blended_per_m": 0.85
+      },
+      "vs_openrouter_pct": 84.1
+    },
+    {
+      "id": "ali/kimi-k3",
+      "family": "Alibaba Cloud",
       "atmorouter": {
         "input_per_m": 0.075,
         "output_per_m": 0.375,
@@ -1148,28 +1387,38 @@
       },
       "openrouter": {
         "id": "moonshotai/kimi-k3",
-        "input_per_m": 0.73,
-        "output_per_m": 10.0,
-        "blended_per_m": 3.0475
+        "input_per_m": 0.239,
+        "output_per_m": 11.936,
+        "blended_per_m": 3.16325
       },
-      "vs_openrouter_pct": 95.1
+      "vs_openrouter_pct": 95.3
     },
     {
-      "id": "cp/xai/grok-4.7",
-      "family": "Cline Pass",
+      "id": "cx/gpt-6-astra",
+      "family": "Codex",
+      "atmorouter": {
+        "input_per_m": 0.075,
+        "output_per_m": 0.375,
+        "blended_per_m": 0.15,
+        "context_length": 272000
+      },
+      "openrouter": {
+        "id": "openai/gpt-6-astra",
+        "input_per_m": 10.0,
+        "output_per_m": 50.0,
+        "blended_per_m": 20.0
+      },
+      "vs_openrouter_pct": 99.2
+    },
+    {
+      "id": "grok/grok-4.7-build-fast",
+      "family": "GROK",
       "atmorouter": {
         "input_per_m": 0.1,
         "output_per_m": 0.3,
         "blended_per_m": 0.15,
         "context_length": 500000
-      },
-      "openrouter": {
-        "id": "x-ai/grok-4.7",
-        "input_per_m": 2.0,
-        "output_per_m": 6.0,
-        "blended_per_m": 3.0
-      },
-      "vs_openrouter_pct": 95.0
+      }
     },
     {
       "id": "kc/k3",
@@ -1192,357 +1441,12 @@
       }
     },
     {
-      "id": "ali/glm-5.3",
-      "family": "Alibaba Cloud",
-      "atmorouter": {
-        "input_per_m": 0.098,
-        "output_per_m": 0.308,
-        "blended_per_m": 0.1505,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.3",
-        "input_per_m": 0.079,
-        "output_per_m": 4.8,
-        "blended_per_m": 1.25925
-      },
-      "vs_openrouter_pct": 88.0
-    },
-    {
-      "id": "cb/gemini-2.5-flash-image",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.0075,
-        "output_per_m": 0.75,
-        "blended_per_m": 0.193125,
-        "context_length": 0
-      },
-      "openrouter": {
-        "id": "google/gemini-2.5-flash-image",
-        "input_per_m": 0.3,
-        "output_per_m": 2.5,
-        "blended_per_m": 0.85
-      },
-      "vs_openrouter_pct": 77.3
-    },
-    {
-      "id": "ag/claude-sonnet-5-5",
-      "family": "Antigravity",
-      "atmorouter": {
-        "input_per_m": 0.1,
-        "output_per_m": 0.5,
-        "blended_per_m": 0.2,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "cp/cline-pass/deepseek-v4-pro",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.165,
-        "output_per_m": 0.495,
-        "blended_per_m": 0.2475,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "deepseek/deepseek-v4-pro",
-        "input_per_m": 0.95526,
-        "output_per_m": 1.91052,
-        "blended_per_m": 1.194075
-      },
-      "vs_openrouter_pct": 79.3
-    },
-    {
-      "id": "cb/claude-opus-4.6",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.125,
-        "output_per_m": 0.625,
-        "blended_per_m": 0.25,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "anthropic/claude-opus-4.6",
-        "input_per_m": 5.0,
-        "output_per_m": 25.0,
-        "blended_per_m": 10.0
-      },
-      "vs_openrouter_pct": 97.5
-    },
-    {
-      "id": "cb/claude-opus-4.7-1m",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.125,
-        "output_per_m": 0.625,
-        "blended_per_m": 0.25,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "cx/gpt-6-astra",
-      "family": "Codex",
-      "atmorouter": {
-        "input_per_m": 0.125,
-        "output_per_m": 0.625,
-        "blended_per_m": 0.25,
-        "context_length": 272000
-      },
-      "openrouter": {
-        "id": "openai/gpt-6-astra",
-        "input_per_m": 10.0,
-        "output_per_m": 50.0,
-        "blended_per_m": 20.0
-      },
-      "vs_openrouter_pct": 98.8
-    },
-    {
-      "id": "cb/gpt-5.5",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.125,
-        "output_per_m": 0.75,
-        "blended_per_m": 0.28125,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "openai/gpt-5.5",
-        "input_per_m": 5.0,
-        "output_per_m": 30.0,
-        "blended_per_m": 11.25
-      },
-      "vs_openrouter_pct": 97.5
-    },
-    {
-      "id": "cbcn/kimi-k3",
-      "family": "CodeBuddy CN",
-      "atmorouter": {
-        "input_per_m": 0.1575,
-        "output_per_m": 0.7875,
-        "blended_per_m": 0.315,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "moonshotai/kimi-k3",
-        "input_per_m": 0.73,
-        "output_per_m": 10.0,
-        "blended_per_m": 3.0475
-      },
-      "vs_openrouter_pct": 89.7
-    },
-    {
-      "id": "cb/gpt-image-2",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.2,
-        "output_per_m": 0.75,
-        "blended_per_m": 0.3375,
-        "context_length": 0
-      }
-    },
-    {
-      "id": "cp/cline-pass/mimo-v2.6-pro",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.271875,
-        "output_per_m": 0.54375,
-        "blended_per_m": 0.339844,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "xiaomi/mimo-v2.6-pro",
-        "input_per_m": 0.435,
-        "output_per_m": 0.87,
-        "blended_per_m": 0.54375
-      },
-      "vs_openrouter_pct": 37.5
-    },
-    {
-      "id": "kcai/kimi-for-coding",
-      "family": "KCAI",
-      "atmorouter": {
-        "input_per_m": 0.19,
-        "output_per_m": 0.8,
-        "blended_per_m": 0.3425,
-        "context_length": 1048576
-      }
-    },
-    {
-      "id": "cb/gpt-6-astra",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.175,
-        "output_per_m": 0.875,
-        "blended_per_m": 0.35,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "openai/gpt-6-astra",
-        "input_per_m": 10.0,
-        "output_per_m": 50.0,
-        "blended_per_m": 20.0
-      },
-      "vs_openrouter_pct": 98.2
-    },
-    {
-      "id": "cb/gemini-3.1-flash-image",
-      "family": "CodeBuddy",
-      "atmorouter": {
-        "input_per_m": 0.0125,
-        "output_per_m": 1.5,
-        "blended_per_m": 0.384375,
-        "context_length": 0
-      },
-      "openrouter": {
-        "id": "google/gemini-3.1-flash-image",
-        "input_per_m": 0.5,
-        "output_per_m": 3.0,
-        "blended_per_m": 1.125
-      },
-      "vs_openrouter_pct": 65.8
-    },
-    {
-      "id": "kiro/deepseek-3.2",
-      "family": "KIRO",
-      "atmorouter": {
-        "input_per_m": 0.35,
-        "output_per_m": 0.525,
-        "blended_per_m": 0.39375,
-        "context_length": 164000
-      }
-    },
-    {
-      "id": "ag/claude-opus-5-5",
-      "family": "Antigravity",
-      "atmorouter": {
-        "input_per_m": 0.2,
-        "output_per_m": 1.0,
-        "blended_per_m": 0.4,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "ali/kimi-k3",
-      "family": "Alibaba Cloud",
-      "atmorouter": {
-        "input_per_m": 0.225,
-        "output_per_m": 1.125,
-        "blended_per_m": 0.45,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "moonshotai/kimi-k3",
-        "input_per_m": 0.73,
-        "output_per_m": 10.0,
-        "blended_per_m": 3.0475
-      },
-      "vs_openrouter_pct": 85.2
-    },
-    {
-      "id": "cp/cline-pass/glm-5.3",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.35,
-        "output_per_m": 1.1,
-        "blended_per_m": 0.5375,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5.3",
-        "input_per_m": 0.079,
-        "output_per_m": 4.8,
-        "blended_per_m": 1.25925
-      },
-      "vs_openrouter_pct": 57.3
-    },
-    {
-      "id": "kiro/gpt-5.6-luna",
-      "family": "KIRO",
-      "atmorouter": {
-        "input_per_m": 0.25,
-        "output_per_m": 1.5,
-        "blended_per_m": 0.5625,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "openai/gpt-5.6-luna",
-        "input_per_m": 0.2,
-        "output_per_m": 1.2,
-        "blended_per_m": 0.45
-      },
-      "vs_openrouter_pct": -25.0
-    },
-    {
-      "id": "cp/cline-pass/qwen3.8-max",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.425,
-        "output_per_m": 1.275,
-        "blended_per_m": 0.6375,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "kiro/minimax-m2.5",
-      "family": "KIRO",
-      "atmorouter": {
-        "input_per_m": 0.375,
-        "output_per_m": 1.5,
-        "blended_per_m": 0.65625,
-        "context_length": 196000
-      },
-      "openrouter": {
-        "id": "minimax/minimax-m2.5",
-        "input_per_m": 0.27,
-        "output_per_m": 1.08,
-        "blended_per_m": 0.4725
-      },
-      "vs_openrouter_pct": -38.9
-    },
-    {
-      "id": "kcai/kimi-for-coding-highspeed",
-      "family": "KCAI",
-      "atmorouter": {
-        "input_per_m": 0.38,
-        "output_per_m": 1.6,
-        "blended_per_m": 0.685,
-        "context_length": 262144
-      }
-    },
-    {
-      "id": "cp/cline-pass/mimo-v2.5-pro",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.56985,
-        "output_per_m": 1.1397,
-        "blended_per_m": 0.712312,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "xiaomi/mimo-v2.5-pro",
-        "input_per_m": 0.435,
-        "output_per_m": 0.87,
-        "blended_per_m": 0.54375
-      },
-      "vs_openrouter_pct": -31.0
-    },
-    {
-      "id": "cc/claude-haiku-4-5",
-      "family": "Claude Code",
-      "atmorouter": {
-        "input_per_m": 0.375,
-        "output_per_m": 1.875,
-        "blended_per_m": 0.75,
-        "context_length": 200000
-      }
-    },
-    {
       "id": "kiro/qwen3-coder-next",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 0.375,
-        "output_per_m": 1.875,
-        "blended_per_m": 0.75,
+        "input_per_m": 0.075,
+        "output_per_m": 0.375,
+        "blended_per_m": 0.15,
         "context_length": 256000
       },
       "openrouter": {
@@ -1551,150 +1455,197 @@
         "output_per_m": 0.8,
         "blended_per_m": 0.29
       },
-      "vs_openrouter_pct": -158.6
+      "vs_openrouter_pct": 48.3
     },
     {
-      "id": "cb/gemini-3.0-pro-image",
+      "id": "cb/claude-opus-4.6",
       "family": "CodeBuddy",
       "atmorouter": {
-        "input_per_m": 0.05,
-        "output_per_m": 3.0,
-        "blended_per_m": 0.7875,
-        "context_length": 0
+        "input_per_m": 0.0875,
+        "output_per_m": 0.4375,
+        "blended_per_m": 0.175,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "anthropic/claude-opus-4.6",
+        "input_per_m": 5.0,
+        "output_per_m": 25.0,
+        "blended_per_m": 10.0
+      },
+      "vs_openrouter_pct": 98.2
+    },
+    {
+      "id": "cb/claude-opus-4.7-1m",
+      "family": "CodeBuddy",
+      "atmorouter": {
+        "input_per_m": 0.0875,
+        "output_per_m": 0.4375,
+        "blended_per_m": 0.175,
+        "context_length": 1000000
       }
+    },
+    {
+      "id": "cx/gpt-5.6-terra",
+      "family": "Codex",
+      "atmorouter": {
+        "input_per_m": 0.085,
+        "output_per_m": 0.51,
+        "blended_per_m": 0.19125,
+        "context_length": 272000
+      },
+      "openrouter": {
+        "id": "openai/gpt-5.6-terra",
+        "input_per_m": 2.0,
+        "output_per_m": 12.0,
+        "blended_per_m": 4.5
+      },
+      "vs_openrouter_pct": 95.8
+    },
+    {
+      "id": "mmcn/MiniMax-M2.1-highspeed",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.1185,
+        "output_per_m": 0.474,
+        "blended_per_m": 0.207375,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mmcn/MiniMax-M2.5-highspeed",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.1185,
+        "output_per_m": 0.474,
+        "blended_per_m": 0.207375,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "mmcn/MiniMax-M2.7-highspeed",
+      "family": "MMCN",
+      "atmorouter": {
+        "input_per_m": 0.1185,
+        "output_per_m": 0.474,
+        "blended_per_m": 0.207375,
+        "context_length": 204800
+      }
+    },
+    {
+      "id": "kcai/kimi-for-coding-highspeed",
+      "family": "KCAI",
+      "atmorouter": {
+        "input_per_m": 0.1425,
+        "output_per_m": 0.6,
+        "blended_per_m": 0.256875,
+        "context_length": 262144
+      }
+    },
+    {
+      "id": "cx/gpt-5.6-sol",
+      "family": "Codex",
+      "atmorouter": {
+        "input_per_m": 0.1625,
+        "output_per_m": 0.975,
+        "blended_per_m": 0.365625,
+        "context_length": 272000
+      },
+      "openrouter": {
+        "id": "openai/gpt-5.6-sol",
+        "input_per_m": 4.0,
+        "output_per_m": 20.0,
+        "blended_per_m": 8.0
+      },
+      "vs_openrouter_pct": 95.4
+    },
+    {
+      "id": "cbcn/kimi-k3",
+      "family": "CodeBuddy CN",
+      "atmorouter": {
+        "input_per_m": 0.1875,
+        "output_per_m": 0.9375,
+        "blended_per_m": 0.375,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k3",
+        "input_per_m": 0.239,
+        "output_per_m": 11.936,
+        "blended_per_m": 3.16325
+      },
+      "vs_openrouter_pct": 88.1
+    },
+    {
+      "id": "mai/muse-spark-1.3",
+      "family": "MAI",
+      "atmorouter": {
+        "input_per_m": 0.234375,
+        "output_per_m": 0.796875,
+        "blended_per_m": 0.375,
+        "context_length": 1048576
+      },
+      "openrouter": {
+        "id": "meta/muse-spark-1.3",
+        "input_per_m": 1.25,
+        "output_per_m": 4.25,
+        "blended_per_m": 2.0
+      },
+      "vs_openrouter_pct": 81.2
+    },
+    {
+      "id": "kiro/glm-5",
+      "family": "KIRO",
+      "atmorouter": {
+        "input_per_m": 0.25,
+        "output_per_m": 0.8,
+        "blended_per_m": 0.3875,
+        "context_length": 200000
+      },
+      "openrouter": {
+        "id": "z-ai/glm-5",
+        "input_per_m": 1.0,
+        "output_per_m": 3.2,
+        "blended_per_m": 1.55
+      },
+      "vs_openrouter_pct": 75.0
     },
     {
       "id": "kcai/k3",
       "family": "KCAI",
       "atmorouter": {
-        "input_per_m": 0.6,
-        "output_per_m": 3.0,
-        "blended_per_m": 1.2,
-        "context_length": 1048576
+        "input_per_m": 0.225,
+        "output_per_m": 1.125,
+        "blended_per_m": 0.45,
+        "context_length": 262144
       }
     },
     {
       "id": "kcai/k3-256k",
       "family": "KCAI",
       "atmorouter": {
-        "input_per_m": 0.6,
-        "output_per_m": 3.0,
-        "blended_per_m": 1.2,
+        "input_per_m": 0.225,
+        "output_per_m": 1.125,
+        "blended_per_m": 0.45,
         "context_length": 262144
       }
     },
     {
-      "id": "cp/cline-pass/qwen3.7-plus",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.75,
-        "output_per_m": 3.0,
-        "blended_per_m": 1.3125,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "qwen/qwen3.7-plus",
-        "input_per_m": 0.32,
-        "output_per_m": 1.28,
-        "blended_per_m": 0.56
-      },
-      "vs_openrouter_pct": -134.4
-    },
-    {
-      "id": "cp/xai/grok-4.5",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 0.955,
-        "output_per_m": 2.865,
-        "blended_per_m": 1.4325,
-        "context_length": 500000
-      },
-      "openrouter": {
-        "id": "x-ai/grok-4.5",
-        "input_per_m": 2.0,
-        "output_per_m": 6.0,
-        "blended_per_m": 3.0
-      },
-      "vs_openrouter_pct": 52.2
-    },
-    {
-      "id": "cc/claude-sonnet-5",
+      "id": "cc/claude-haiku-4-5",
       "family": "Claude Code",
       "atmorouter": {
-        "input_per_m": 0.75,
-        "output_per_m": 3.75,
-        "blended_per_m": 1.5,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "anthropic/claude-sonnet-5",
-        "input_per_m": 2.0,
-        "output_per_m": 10.0,
-        "blended_per_m": 4.0
-      },
-      "vs_openrouter_pct": 62.5
-    },
-    {
-      "id": "cc/claude-sonnet-5-5",
-      "family": "Claude Code",
-      "atmorouter": {
-        "input_per_m": 0.75,
-        "output_per_m": 3.75,
-        "blended_per_m": 1.5,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "cp/xai/grok-4.6",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 1.25,
-        "output_per_m": 3.75,
-        "blended_per_m": 1.875,
-        "context_length": 500000
-      },
-      "openrouter": {
-        "id": "x-ai/grok-4.6",
-        "input_per_m": 2.0,
-        "output_per_m": 6.0,
-        "blended_per_m": 3.0
-      },
-      "vs_openrouter_pct": 37.5
-    },
-    {
-      "id": "kiro/glm-5",
-      "family": "KIRO",
-      "atmorouter": {
-        "input_per_m": 1.25,
-        "output_per_m": 4.0,
-        "blended_per_m": 1.9375,
+        "input_per_m": 0.25,
+        "output_per_m": 1.25,
+        "blended_per_m": 0.5,
         "context_length": 200000
-      },
-      "openrouter": {
-        "id": "z-ai/glm-5",
-        "input_per_m": 0.6,
-        "output_per_m": 1.92,
-        "blended_per_m": 0.93
-      },
-      "vs_openrouter_pct": -108.3
-    },
-    {
-      "id": "cc/claude-sonnet-4-6",
-      "family": "Claude Code",
-      "atmorouter": {
-        "input_per_m": 1.125,
-        "output_per_m": 5.625,
-        "blended_per_m": 2.25,
-        "context_length": 1000000
       }
     },
     {
       "id": "kiro/claude-haiku-4.5",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 1.25,
-        "output_per_m": 6.25,
-        "blended_per_m": 2.5,
+        "input_per_m": 0.25,
+        "output_per_m": 1.25,
+        "blended_per_m": 0.5,
         "context_length": 200000
       },
       "openrouter": {
@@ -1703,106 +1654,49 @@
         "output_per_m": 5.0,
         "blended_per_m": 2.0
       },
-      "vs_openrouter_pct": -25.0
+      "vs_openrouter_pct": 75.0
     },
     {
-      "id": "cp/cline-pass/qwen3.7-max",
-      "family": "Cline Pass",
+      "id": "mai/muse-spark-1.1",
+      "family": "MAI",
       "atmorouter": {
-        "input_per_m": 1.5,
-        "output_per_m": 6.0,
-        "blended_per_m": 2.625,
-        "context_length": 1000000
+        "input_per_m": 0.3125,
+        "output_per_m": 1.0625,
+        "blended_per_m": 0.5,
+        "context_length": 1048576
       },
       "openrouter": {
-        "id": "qwen/qwen3.7-max",
-        "input_per_m": 1.475,
-        "output_per_m": 4.425,
-        "blended_per_m": 2.2125
+        "id": "meta/muse-spark-1.1",
+        "input_per_m": 1.25,
+        "output_per_m": 4.25,
+        "blended_per_m": 2.0
       },
-      "vs_openrouter_pct": -18.6
+      "vs_openrouter_pct": 75.0
     },
     {
-      "id": "cc/claude-opus-5-5",
-      "family": "Claude Code",
+      "id": "mai/muse-spark-1.2",
+      "family": "MAI",
       "atmorouter": {
-        "input_per_m": 1.39,
-        "output_per_m": 6.95,
-        "blended_per_m": 2.78,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "cp/cline-pass/kimi-k3",
-      "family": "Cline Pass",
-      "atmorouter": {
-        "input_per_m": 1.455,
-        "output_per_m": 7.275,
-        "blended_per_m": 2.91,
-        "context_length": 1000000
+        "input_per_m": 0.3125,
+        "output_per_m": 1.0625,
+        "blended_per_m": 0.5,
+        "context_length": 1048576
       },
       "openrouter": {
-        "id": "moonshotai/kimi-k3",
-        "input_per_m": 0.73,
-        "output_per_m": 10.0,
-        "blended_per_m": 3.0475
+        "id": "meta/muse-spark-1.2",
+        "input_per_m": 1.25,
+        "output_per_m": 4.25,
+        "blended_per_m": 2.0
       },
-      "vs_openrouter_pct": 4.5
-    },
-    {
-      "id": "cc/claude-opus-5",
-      "family": "Claude Code",
-      "atmorouter": {
-        "input_per_m": 1.8625,
-        "output_per_m": 9.3125,
-        "blended_per_m": 3.725,
-        "context_length": 1000000
-      },
-      "openrouter": {
-        "id": "anthropic/claude-opus-5",
-        "input_per_m": 5.0,
-        "output_per_m": 25.0,
-        "blended_per_m": 10.0
-      },
-      "vs_openrouter_pct": 62.8
-    },
-    {
-      "id": "cc/claude-opus-4-6",
-      "family": "Claude Code",
-      "atmorouter": {
-        "input_per_m": 1.875,
-        "output_per_m": 9.375,
-        "blended_per_m": 3.75,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "cc/claude-opus-4-7",
-      "family": "Claude Code",
-      "atmorouter": {
-        "input_per_m": 1.875,
-        "output_per_m": 9.375,
-        "blended_per_m": 3.75,
-        "context_length": 1000000
-      }
-    },
-    {
-      "id": "cc/claude-opus-4-8",
-      "family": "Claude Code",
-      "atmorouter": {
-        "input_per_m": 1.875,
-        "output_per_m": 9.375,
-        "blended_per_m": 3.75,
-        "context_length": 1000000
-      }
+      "vs_openrouter_pct": 75.0
     },
     {
       "id": "kiro/claude-sonnet-5",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 2.5,
-        "output_per_m": 12.5,
-        "blended_per_m": 5.0,
+        "input_per_m": 0.4,
+        "output_per_m": 2.0,
+        "blended_per_m": 0.8,
         "context_length": 1000000
       },
       "openrouter": {
@@ -1811,15 +1705,15 @@
         "output_per_m": 10.0,
         "blended_per_m": 4.0
       },
-      "vs_openrouter_pct": -25.0
+      "vs_openrouter_pct": 80.0
     },
     {
       "id": "kiro/claude-sonnet-5.5",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 2.5,
-        "output_per_m": 12.5,
-        "blended_per_m": 5.0,
+        "input_per_m": 0.4,
+        "output_per_m": 2.0,
+        "blended_per_m": 0.8,
         "context_length": 1000000
       },
       "openrouter": {
@@ -1828,15 +1722,15 @@
         "output_per_m": 10.0,
         "blended_per_m": 4.0
       },
-      "vs_openrouter_pct": -25.0
+      "vs_openrouter_pct": 80.0
     },
     {
       "id": "kiro/gpt-5.6-terra",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 2.5,
-        "output_per_m": 15.0,
-        "blended_per_m": 5.625,
+        "input_per_m": 0.4,
+        "output_per_m": 2.4,
+        "blended_per_m": 0.9,
         "context_length": 1000000
       },
       "openrouter": {
@@ -1845,42 +1739,86 @@
         "output_per_m": 12.0,
         "blended_per_m": 4.5
       },
-      "vs_openrouter_pct": -25.0
+      "vs_openrouter_pct": 80.0
     },
     {
-      "id": "cc/claude-fable-5",
+      "id": "cc/claude-sonnet-5-5",
       "family": "Claude Code",
       "atmorouter": {
-        "input_per_m": 3.725,
-        "output_per_m": 18.625,
-        "blended_per_m": 7.45,
-        "context_length": 0
+        "input_per_m": 0.485,
+        "output_per_m": 2.425,
+        "blended_per_m": 0.97,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "cc/claude-sonnet-5",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 0.5,
+        "output_per_m": 2.5,
+        "blended_per_m": 1.0,
+        "context_length": 1000000
       },
       "openrouter": {
-        "id": "anthropic/claude-fable-5",
-        "input_per_m": 10.0,
-        "output_per_m": 50.0,
-        "blended_per_m": 20.0
+        "id": "anthropic/claude-sonnet-5",
+        "input_per_m": 2.0,
+        "output_per_m": 10.0,
+        "blended_per_m": 4.0
       },
-      "vs_openrouter_pct": 62.8
+      "vs_openrouter_pct": 75.0
     },
     {
-      "id": "cc/claude-fable-5-1",
-      "family": "Claude Code",
+      "id": "mai/muse-wonder-1.0",
+      "family": "MAI",
       "atmorouter": {
-        "input_per_m": 3.725,
-        "output_per_m": 18.625,
-        "blended_per_m": 7.45,
-        "context_length": 0
+        "input_per_m": 0.5,
+        "output_per_m": 2.5,
+        "blended_per_m": 1.0,
+        "context_length": 1048576
       }
+    },
+    {
+      "id": "ag/gemini-4-argon",
+      "family": "Antigravity",
+      "atmorouter": {
+        "input_per_m": 0.445,
+        "output_per_m": 2.67,
+        "blended_per_m": 1.00125,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "google/gemini-4-argon",
+        "input_per_m": 2.0,
+        "output_per_m": 10.0,
+        "blended_per_m": 4.0
+      },
+      "vs_openrouter_pct": 75.0
+    },
+    {
+      "id": "cp/xai/grok-4.7",
+      "family": "Cline Pass",
+      "atmorouter": {
+        "input_per_m": 0.75,
+        "output_per_m": 2.25,
+        "blended_per_m": 1.125,
+        "context_length": 500000
+      },
+      "openrouter": {
+        "id": "x-ai/grok-4.7",
+        "input_per_m": 2.0,
+        "output_per_m": 6.0,
+        "blended_per_m": 3.0
+      },
+      "vs_openrouter_pct": 62.5
     },
     {
       "id": "kiro/claude-sonnet-4.6",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 3.75,
-        "output_per_m": 18.75,
-        "blended_per_m": 7.5,
+        "input_per_m": 0.6,
+        "output_per_m": 3.0,
+        "blended_per_m": 1.2,
         "context_length": 1000000
       },
       "openrouter": {
@@ -1889,15 +1827,15 @@
         "output_per_m": 15.0,
         "blended_per_m": 6.0
       },
-      "vs_openrouter_pct": -25.0
+      "vs_openrouter_pct": 80.0
     },
     {
       "id": "kiro/claude-opus-5.5",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 5.0,
-        "output_per_m": 25.0,
-        "blended_per_m": 10.0,
+        "input_per_m": 0.69,
+        "output_per_m": 3.45,
+        "blended_per_m": 1.38,
         "context_length": 1000000
       },
       "openrouter": {
@@ -1906,15 +1844,32 @@
         "output_per_m": 20.0,
         "blended_per_m": 8.0
       },
-      "vs_openrouter_pct": -25.0
+      "vs_openrouter_pct": 82.8
+    },
+    {
+      "id": "cp/xai/grok-4.5",
+      "family": "Cline Pass",
+      "atmorouter": {
+        "input_per_m": 0.97,
+        "output_per_m": 2.91,
+        "blended_per_m": 1.455,
+        "context_length": 500000
+      },
+      "openrouter": {
+        "id": "x-ai/grok-4.5",
+        "input_per_m": 2.0,
+        "output_per_m": 6.0,
+        "blended_per_m": 3.0
+      },
+      "vs_openrouter_pct": 51.5
     },
     {
       "id": "kiro/claude-opus-4.8",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 6.25,
-        "output_per_m": 31.25,
-        "blended_per_m": 12.5,
+        "input_per_m": 0.7375,
+        "output_per_m": 3.6875,
+        "blended_per_m": 1.475,
         "context_length": 1000000
       },
       "openrouter": {
@@ -1923,15 +1878,15 @@
         "output_per_m": 25.0,
         "blended_per_m": 10.0
       },
-      "vs_openrouter_pct": -25.0
+      "vs_openrouter_pct": 85.2
     },
     {
       "id": "kiro/claude-opus-5",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 6.25,
-        "output_per_m": 31.25,
-        "blended_per_m": 12.5,
+        "input_per_m": 0.7375,
+        "output_per_m": 3.6875,
+        "blended_per_m": 1.475,
         "context_length": 1000000
       },
       "openrouter": {
@@ -1940,24 +1895,260 @@
         "output_per_m": 25.0,
         "blended_per_m": 10.0
       },
-      "vs_openrouter_pct": -25.0
+      "vs_openrouter_pct": 85.2
+    },
+    {
+      "id": "cc/claude-sonnet-4-6",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 0.75,
+        "output_per_m": 3.75,
+        "blended_per_m": 1.5,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "cc/claude-opus-5-5",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 0.92,
+        "output_per_m": 4.6,
+        "blended_per_m": 1.84,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "kiro/claude-opus-4.5",
+      "family": "KIRO",
+      "atmorouter": {
+        "input_per_m": 1.0,
+        "output_per_m": 5.0,
+        "blended_per_m": 2.0,
+        "context_length": 200000
+      },
+      "openrouter": {
+        "id": "anthropic/claude-opus-4.5",
+        "input_per_m": 5.0,
+        "output_per_m": 25.0,
+        "blended_per_m": 10.0
+      },
+      "vs_openrouter_pct": 80.0
+    },
+    {
+      "id": "kiro/claude-opus-4.6",
+      "family": "KIRO",
+      "atmorouter": {
+        "input_per_m": 1.0,
+        "output_per_m": 5.0,
+        "blended_per_m": 2.0,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "anthropic/claude-opus-4.6",
+        "input_per_m": 5.0,
+        "output_per_m": 25.0,
+        "blended_per_m": 10.0
+      },
+      "vs_openrouter_pct": 80.0
+    },
+    {
+      "id": "kiro/claude-opus-4.7",
+      "family": "KIRO",
+      "atmorouter": {
+        "input_per_m": 1.0,
+        "output_per_m": 5.0,
+        "blended_per_m": 2.0,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "anthropic/claude-opus-4.7",
+        "input_per_m": 5.0,
+        "output_per_m": 25.0,
+        "blended_per_m": 10.0
+      },
+      "vs_openrouter_pct": 80.0
+    },
+    {
+      "id": "moon/kimi-k2.6",
+      "family": "MOON",
+      "atmorouter": {
+        "input_per_m": 1.1875,
+        "output_per_m": 5.0,
+        "blended_per_m": 2.140625,
+        "context_length": 262144
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k2.6",
+        "input_per_m": 0.65,
+        "output_per_m": 3.41,
+        "blended_per_m": 1.34
+      },
+      "vs_openrouter_pct": -59.7
+    },
+    {
+      "id": "moon/kimi-k2.7-code",
+      "family": "MOON",
+      "atmorouter": {
+        "input_per_m": 1.1875,
+        "output_per_m": 5.0,
+        "blended_per_m": 2.140625,
+        "context_length": 262144
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k2.7-code",
+        "input_per_m": 0.6712,
+        "output_per_m": 3.35,
+        "blended_per_m": 1.3409
+      },
+      "vs_openrouter_pct": -59.6
+    },
+    {
+      "id": "cc/claude-opus-5",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 1.075,
+        "output_per_m": 5.375,
+        "blended_per_m": 2.15,
+        "context_length": 1000000
+      },
+      "openrouter": {
+        "id": "anthropic/claude-opus-5",
+        "input_per_m": 5.0,
+        "output_per_m": 25.0,
+        "blended_per_m": 10.0
+      },
+      "vs_openrouter_pct": 78.5
     },
     {
       "id": "kiro/gpt-5.6-sol",
       "family": "KIRO",
       "atmorouter": {
-        "input_per_m": 6.25,
-        "output_per_m": 37.5,
-        "blended_per_m": 14.0625,
+        "input_per_m": 1.0,
+        "output_per_m": 6.0,
+        "blended_per_m": 2.25,
         "context_length": 1000000
       },
       "openrouter": {
         "id": "openai/gpt-5.6-sol",
-        "input_per_m": 2.0,
-        "output_per_m": 10.0,
-        "blended_per_m": 4.0
+        "input_per_m": 4.0,
+        "output_per_m": 20.0,
+        "blended_per_m": 8.0
       },
-      "vs_openrouter_pct": -251.6
+      "vs_openrouter_pct": 71.9
+    },
+    {
+      "id": "cc/claude-opus-4-6",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 1.1625,
+        "output_per_m": 5.8125,
+        "blended_per_m": 2.325,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "cc/claude-opus-4-7",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 1.1625,
+        "output_per_m": 5.8125,
+        "blended_per_m": 2.325,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "cc/claude-opus-4-8",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 1.1625,
+        "output_per_m": 5.8125,
+        "blended_per_m": 2.325,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "ag/claude-sonnet-5-5",
+      "family": "Antigravity",
+      "atmorouter": {
+        "input_per_m": 1.175,
+        "output_per_m": 5.875,
+        "blended_per_m": 2.35,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "cc/claude-opus-4-5",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 1.25,
+        "output_per_m": 6.25,
+        "blended_per_m": 2.5,
+        "context_length": 200000
+      }
+    },
+    {
+      "id": "moon/kimi-k2.7-code-highspeed",
+      "family": "MOON",
+      "atmorouter": {
+        "input_per_m": 2.375,
+        "output_per_m": 10.0,
+        "blended_per_m": 4.28125,
+        "context_length": 262144
+      }
+    },
+    {
+      "id": "ag/claude-opus-5-5",
+      "family": "Antigravity",
+      "atmorouter": {
+        "input_per_m": 2.23,
+        "output_per_m": 11.15,
+        "blended_per_m": 4.46,
+        "context_length": 1000000
+      }
+    },
+    {
+      "id": "cc/claude-fable-5",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 2.325,
+        "output_per_m": 11.625,
+        "blended_per_m": 4.65,
+        "context_length": 0
+      },
+      "openrouter": {
+        "id": "anthropic/claude-fable-5",
+        "input_per_m": 10.0,
+        "output_per_m": 50.0,
+        "blended_per_m": 20.0
+      },
+      "vs_openrouter_pct": 76.8
+    },
+    {
+      "id": "cc/claude-fable-5-1",
+      "family": "Claude Code",
+      "atmorouter": {
+        "input_per_m": 2.325,
+        "output_per_m": 11.625,
+        "blended_per_m": 4.65,
+        "context_length": 0
+      }
+    },
+    {
+      "id": "moon/kimi-k3",
+      "family": "MOON",
+      "atmorouter": {
+        "input_per_m": 3.75,
+        "output_per_m": 18.75,
+        "blended_per_m": 7.5,
+        "context_length": 1048576
+      },
+      "openrouter": {
+        "id": "moonshotai/kimi-k3",
+        "input_per_m": 0.239,
+        "output_per_m": 11.936,
+        "blended_per_m": 3.16325
+      },
+      "vs_openrouter_pct": -137.1
     }
   ]
 }
