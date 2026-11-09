@@ -16,9 +16,9 @@ git.
 
 ## Latest snapshot
 
-_Auto-updated 2026-11-02T10:18:26Z — 145 models, 94 matched on OpenRouter._
+_Auto-updated 2026-11-09T10:37:57Z — 154 models, 103 matched on OpenRouter._
 
-**78% average saving vs OpenRouter** across 94 matched models (91 of them cheaper).
+**73% average saving vs OpenRouter** across 103 matched models (99 of them cheaper).
 
 ## Cheapest 25 models (blended $/M tokens, 3:1 in:out)
 
@@ -29,28 +29,28 @@ _Auto-updated 2026-11-02T10:18:26Z — 145 models, 94 matched on OpenRouter._
 | `zai/glm-5.3-flash` | $0.0004 | $0.0013 | $0.0006 | −99% | 1000k |
 | `alicn/deepseek-v4.1-flash` | $0.0004 | $0.0015 | $0.0007 | −100% | 1000k |
 | `alicn/deepseek-v4.1-flash-1017` | $0.0004 | $0.0015 | $0.0007 | −100% | 1000k |
-| `mm/MiniMax-M3.1-Flash` | $0.0004 | $0.0015 | $0.0007 | — | 1000k |
-| `mm/MiniMax-M3.1-Flash-Preview` | $0.0004 | $0.0015 | $0.0007 | — | 1000k |
 | `alicn/deepseek-v4-flash-0731` | $0.0006 | $0.0016 | $0.0008 | −99% | 1000k |
 | `zai/glm-4.6v` | $0.0008 | $0.0022 | $0.0011 | −100% | 200k |
-| `mm/MiniMax-M2` | $0.0008 | $0.0030 | $0.0013 | — | 204k |
-| `mm/MiniMax-M2.1` | $0.0008 | $0.0030 | $0.0013 | — | 204k |
-| `mm/MiniMax-M2.5` | $0.0008 | $0.0030 | $0.0013 | — | 204k |
-| `mm/MiniMax-M2.7` | $0.0008 | $0.0030 | $0.0013 | — | 204k |
-| `mm/MiniMax-M3` | $0.0008 | $0.0030 | $0.0013 | — | 1000k |
-| `mai/muse-spark-1.2-contributor` | $0.0015 | $0.0030 | $0.0019 | −98% | 1048k |
-| `mai/muse-spark-1.3-contributor` | $0.0015 | $0.0030 | $0.0019 | −98% | 1048k |
+| `mmcn/MiniMax-M2` | $0.0008 | $0.0030 | $0.0013 | — | 204k |
 | `ali/deepseek-v4-pro-0813` | $0.0016 | $0.0050 | $0.0025 | −100% | 1000k |
 | `alicn/deepseek-v4-pro-0813` | $0.0016 | $0.0050 | $0.0025 | −100% | 1000k |
-| `mm/MiniMax-M2.1-highspeed` | $0.0015 | $0.0060 | $0.0026 | — | 204k |
-| `mm/MiniMax-M2.5-highspeed` | $0.0015 | $0.0060 | $0.0026 | — | 204k |
-| `mm/MiniMax-M2.7-highspeed` | $0.0015 | $0.0060 | $0.0026 | — | 204k |
+| `mmcn/MiniMax-M2.1-highspeed` | $0.0015 | $0.0060 | $0.0026 | — | 204k |
+| `mmcn/MiniMax-M2.5-highspeed` | $0.0015 | $0.0060 | $0.0026 | — | 204k |
 | `ag/gemini-3.8-flash-high` | $0.0019 | $0.0094 | $0.0037 | — | 1000k |
 | `alicn/kimi-k2.6` | $0.0024 | $0.010 | $0.0043 | −100% | 262k |
 | `alicn/kimi-k2.7-code` | $0.0024 | $0.010 | $0.0043 | −100% | 262k |
-| `cb/glm-5.3-flash` | $0.0034 | $0.011 | $0.0053 | −88% | 1000k |
+| `ali/qwen3.8-omni-flash` | $0.0030 | $0.0094 | $0.0046 | −98% | 1000k |
+| `ali/qwen3.8-flash` | $0.0034 | $0.011 | $0.0052 | −98% | 1000k |
+| `alicn/glm-5.2` | $0.0035 | $0.011 | $0.0054 | −100% | 1000k |
+| `alicn/glm-5.3` | $0.0035 | $0.011 | $0.0054 | −99% | 1000k |
+| `zai/glm-5.3` | $0.0035 | $0.011 | $0.0054 | −99% | 1000k |
+| `ali/qwen3.8-max-0902` | $0.0050 | $0.015 | $0.0075 | −100% | 1000k |
+| `alicn/qwen3.8-max` | $0.0050 | $0.015 | $0.0075 | — | 1000k |
+| `alicn/qwen3.8-max-0902` | $0.0050 | $0.015 | $0.0075 | −100% | 1000k |
+| `oai/gpt-6-luna` | $0.0043 | $0.021 | $0.0085 | −96% | 1050k |
+| `alicn/kimi/kimi-k3.1-pro` | $0.0050 | $0.025 | $0.010 | −100% | 1000k |
 
-_Full data for all 145 models: [`data/data.json`](data/data.json)._
+_Full data for all 154 models: [`data/data.json`](data/data.json)._
 
 ## How it works
 
